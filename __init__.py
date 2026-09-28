@@ -90,8 +90,6 @@ class PhotoColorGrainMatch:
         return result, float(np.mean(added_levels))
 
 
-NODE_CLASS_MAPPINGS["PhotoColorGrainMatch"] = PhotoColorGrainMatch
-
 NODE_CLASS_MAPPINGS = {
     **REF_NODES,
     **TEXT_NODES,
@@ -107,6 +105,7 @@ NODE_CLASS_MAPPINGS = {
     "IdentityFeatureTransferAdvanced": IdentityFeatureTransferAdvanced,
     "IdentityFeatureTransferV3": IdentityFeatureTransferV3,
     "IdentityFeatureTransferFinal": IdentityFeatureTransferFinal,
+    "PhotoColorGrainMatch": PhotoColorGrainMatch,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
